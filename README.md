@@ -1,5 +1,5 @@
 # CV-Template
-Based off 'Jake's Resume' from available templates on Overleaf. I just made it prettier, added more section and made some changes to make it more aesthetically pleasing
+Based off 'Jake's Resume' from available templates on Overleaf. I made it prettier, added more section and made some changes to spacing to make it more aesthetically pleasing. 
 Original Template: https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
 <br />
 
