@@ -1,0 +1,373 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+%----------DO MARGIN ADJUSTMENT HERE---------------
+\usepackage[letterpaper,margin=1.05in]{geometry}
+%---------END OF MARGIN ADJUSTMENT-----------------
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\newtcbox{\badge}[1][red]{
+  on line, 
+  arc=2pt,
+  colback=#1!50!darkgoldenrod,
+  colframe=#1!50!darkgoldenrod,
+  fontupper=\color{black},
+  boxrule=1pt, 
+  boxsep=0pt,
+  left=6pt,
+  right=6pt,
+  top=2pt,
+  bottom=2pt
+}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand\fbox{\fcolorbox{gold(metallic)}{white}}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\definecolor{darkgoldenrod}{rgb}{0.93, 0.91, 0.67}
+\definecolor{goldenrod}{rgb}{0.72, 0.53, 0.04}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{goldenrod}\titlerule \vspace{-5pt}]
+%"blue" is where you change section title colour
+%"red" is where you change underline rule colour
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingSpecial}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\definecolor{darkcandyapplered}{rgb}{0.64, 0.0, 0.0}
+
+\begin{center}
+    \textbf{\Huge \scshape Vidya Dhopate} \\ \vspace{5pt} 
+    \small +91 98349 88189 $|$ \href{mailto:dhopatevidya@gmail.com}{\underline{dhopatevidya@gmail.com}} $|$ 
+    \href{https://github.com/vidyawantstobattle}{\underline{github.com/vidyawantstobattle}} $|$
+    \href{https://www.linkedin.com/in/vidya-dhopate/}{\underline{linkedin.com/in/vidya-dhopate}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\smallskip
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Software Engineering for Green Deal (SE4GD)}{\small{CGPA: }}
+      {Erasmus Mundus Joint Masters Degree (EMJMD)}{Sep 2023 -- Present}\\
+    \resumeItemListStart
+        % \resumeItem{\textbf{Relevant Coursework:} Computer Vision, Advances in Machine Learning, Cognitive Computing and Natural Language Processing, Artificial Intelligence, Big Data Analytics, Data Warehousing and Data Mining, Bioinformatics, Embedded and IOT Lab.}
+        \resumeItem{\textbf{University of L'Aquila, Italy (UAQ):}}
+        \resumeItem{\textbf{Lappeenranta University of Technology, Finland (LUT):}}
+    \resumeItemListEnd
+    \medskip
+    
+      \resumeSubheading
+      {Indian Institute of Science, Bangalore (IISc)}{\textbf{}}
+      {Centre for Product Design and Manufacturing (CPDM) - Knowledge Internship}{July 2021 -- Aug 2021}
+    \resumeItemListStart
+        \resumeItem{\textbf{Summer School:} A 7-week lecture series with the theme of Industry 4.0, delineating the latest research in the disciplines of MedTech, Mass Customization, Digital Twins, ARVR, and Advanced Manufacturing.}
+    \resumeItemListEnd
+    \medskip
+    
+    \resumeSubheading
+      {Maharashtra Institute of Technology, Pune (MIT-WPU)}{\small{CGPA: 9.34 / 10}}
+      {Bachelor of Technology in Computer Science and Engineering}{July 2017 -- May 2021}\\
+    \resumeItemListStart
+        % \resumeItem{\textbf{Relevant Coursework:} Computer Vision, Advances in Machine Learning, Cognitive Computing and Natural Language Processing, Artificial Intelligence, Big Data Analytics, Data Warehousing and Data Mining, Bioinformatics, Embedded and IOT Lab.}
+        \resumeItem{\textbf{Teaching Experience:} Hosted a 4-day computer vision basics workshop for teaching 59 students.}
+        \resumeItem{\textbf{Volunteering:} Presented an IoT and Computer Vision-based project titled 'Smart Shoe For The Visually Impaired' to underprivileged children through an exhibition and explained its working.}
+     
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+\smallskip
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Michelin}{\emph{Jul 2021 -- Jul 2023}}
+      {Digital Solutions Developer 2}{}
+      \resumeItemListStart
+        \resumeItem{Currently working on developing a repository of common modules required for multiple Michelin CX projects outside FF squad using Svelte framework.}
+        \resumeItem{Developed customized widgets and UIs using ApostropheCMS for seven projects of the websites for subsidiary companies owned by Michelin.}
+        \resumeItem{Worked on critical modules such as Tyre Selector, Dealer Locator, Cookie Consent and Partner Wall.}
+        \resumeItem{Received the Champions Award in recognition of work done on the NewsPlatform project.}
+    
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Blue Planet Infosolutions Pvt. Ltd.}{\emph{Nov 2020 -- Feb 2021}}
+      {Project Management Intern}{}
+      \resumeItemListStart
+        \resumeItem{Defined user requirements and feature enhancements for an Alexa Skill project that acts as an intelligent medicine reminder alongside the company's pan-health solutions.}
+        \resumeItem{Proposed and integrated two new features: low medicine stock alert and caretaker notifications.}
+    
+    \resumeItemListEnd
+    
+
+    \smallskip
+    \resumeSubheading
+      {Analytics Domain}{\emph{Feb 2020 -- May 2020}}
+      {Technical Intern}{}
+      \resumeItemListStart
+        \resumeItem{Created a tool for HR Analytics which uses Django framework to determine the MBTI Personality Type of an employee and automates scoring of recruitment candidates using Fuzzy TOPSIS.} 
+        \resumeItem {Proposed insights on Employee Attrition Dataset  by IBM by analysing factors underlying employee performance prior to attrition.}
+        \resumeItem{Curated the curriculum for the Microservices corporate training course based on Docker and Kubernetes.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % \resumeSubheading
+    %   {Human Resource Intern}{\emph{June 2019}}
+    %   {Nityanand Infrastructure Pvt. Ltd.}{}
+    %   \resumeItemListStart
+    %     \resumeItem{Learnt about the \textbf{welfare policies} of the company formulated for the workers.}
+    %     \resumeItem{Understood the worker \textbf{payroll and attendance} systems.}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS------------------
+\section{Publications}
+\smallskip
+
+\begin{itemize}[leftmargin=0.35in, label={}]
+
+    {\item{ Shweta Panhalkar, \textbf{Vidya Dhopate}, Shreya Gangula and Parul Jadhav (2021); Vision Transformers : History, Significance, Applications and Future Scope}; International Journal of Management, Technology And Engineering (IJMTE) 11(02) (ISSN: 2249-7455).
+    }\small{[\href{https://app.box.com/s/isay9g470i0364wcekx08eun2pmf7yyd}{\underline{Paper Link}]}}
+    
+\end{itemize}
+%-----------PROJECTS-----------
+\section{Project Highlights}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Query-Focused Video Summarization} {}}{}
+          \resumeItemListStart
+            \resumeItem{Generated benchmark results on the YouTube dataset introduced by Huang et al. by achieving an F1 Score of 69.91 and an increase in accuracy of 12.2\% over the previous benchmark model on the same dataset.}
+            \resumeItem{Proposed an end-to-end model architecture for generating video summary from multi-modal inputs of textual query and a video using supervised learning.}
+            \resumeItem{Introduced attention network to capture the temporal context available in videos alongside spatial context.}
+            \resumeItem{Integrated autoencoder for textual embedding, ResNet-34 for visual embedding, and and cosine similarity for multi-modal embedding.[\href{https://github.com/vidyawantstobattle/Query-Focused-Video-Summarization}{\underline{Code Link}]}}
+          \resumeItemListEnd
+    
+          \resumeProjectHeading
+          {\textbf{HealthClick} {}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a telemedicine website using Flask and Bootstrap having multiple patient-centric features.}
+            \resumeItem{Designed a feature for ordering medicines through the website having a MongoDB backend.}
+            \resumeItem{Implemented a dialogflow powered chatbot that answers questions related to the hospital and general health queries. [\href{https://github.com/sdsg01/Health-Click}{\underline{Code Link}]}}
+          \resumeItemListEnd
+          
+         \resumeProjectHeading
+          {\textbf{Museum Surveillance System} {}}{}
+          \resumeItemListStart
+            \resumeItem{Integrated the hardware components comprising of camera, buzzer, and IR sensor with the software using Raspberry Pi 3 for processing.}
+            \resumeItem{Employed OpenCV library to detect suspicious activity through foreground distinction by comparison of background with input from the camera.}
+            \resumeItem{Used python to automate the process of alerting museum authorities through an API. [\href{https://github.com/kg-0805/IOT-Mini-Project}{\underline{Code Link}]}}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{Smart Sadak (Smart Road)} {}}{}
+          \resumeItemListStart
+            \resumeItem{Implements a smart traffic lights system to decrease idle vehicle time.}
+            \resumeItem{Monitors traffic for wrong-way violations.}
+            \resumeItem{Sends an alert message on overspeeding detection. [\href{https://github.com/sdsg01/SMART_SADAK_NEW}{\underline{Code Link}]}}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+  %----------CO-CURRICULARS-----------------
+\section{Certifications}
+\smallskip
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+      {\textbf{Deep Learning Specialisation} $|$ {Coursera}}{}
+      \resumeItemListStart
+        \resumeItem{Neural Networks and Deep Learning, Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization, Structuring Machine Learning Projects, Convolutional Neural Networks, Sequence Models.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+      {\textbf{The Complete Web Developer Bootcamp} $|$ {Udemy Business}}{}
+    \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+      {\textbf{Mastering Data Structures \& Algorithms using C and C++} $|$ {Udemy Business}}{}
+    \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+      {\textbf{Svelte.js - The Complete Guide (incl. Sapper.js)} $|$ {Udemy Business}}{}
+    \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+      {\textbf{SASS - The Complete SASS Course (CSS Preprocessor)} $|$ {Udemy Business}}{}
+    \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+      {\textbf{Introduction to Sustainability} $|$ {Coursera}}{}
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+\smallskip
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Frameworks}{: \badge[darkgoldenrod]{React} \badge[darkgoldenrod]{Svelte} \badge[darkgoldenrod]{Express}  \badge[darkgoldenrod]{Android Studio}  \badge[darkgoldenrod]{Bootstrap} \badge[darkgoldenrod]{Django}} \\
+    \smallskip
+     \textbf{Languages}{: \badge[darkgoldenrod]{JavaScript} \badge[darkgoldenrod]{Python} \badge[darkgoldenrod]{C} \badge[darkgoldenrod]{C++} \badge[darkgoldenrod]{SQL} \badge[darkgoldenrod]{MongoDB} \badge[darkgoldenrod]{HTML} \badge[darkgoldenrod]{CSS} \badge[darkgoldenrod]{LaTeX}} \\
+     \smallskip
+    \textbf{Developer Tools}{: \badge[darkgoldenrod]{Git} \badge[darkgoldenrod]{Docker} \badge[darkgoldenrod]{VS Code} \badge[darkgoldenrod]{Eclipse} \badge[darkgoldenrod]{ESLint} \badge[darkgoldenrod]{Gitbook}} \\
+    %  \textbf{Libraries}{: keras, pandas, numpy, matplotlib, sci-kit learn, sci-kit image.}
+    }}
+ \end{itemize}
+ %----------CO-CURRICULARS-----------------
+\section{Co-Curriculars}
+
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+      {\textbf{IEEE SheHacks Hackathon (2020)} $|$ {Rank: Top 30}}{}
+      \resumeItemListStart
+        \resumeItem{Created a telemedicine website 'HealthClick' with a usecase for hospitals to provide patients with support services.}
+      \resumeItemListEnd
+      
+      \resumeProjectHeading
+      {\textbf{Bhopal Smart City Hackathon 2.0 (2019)} $|$ {Rank: Top 80}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a project titled Smart Sadak which is a smart system that uses RFID tags
+        for monitoring traffic and detecting traffic violations}
+      \resumeItemListEnd
+      
+      \resumeProjectHeading
+      {\textbf{TEDxMITWPU (2018 - 2021)} $|$ {Role: Head of Speaker Curation}}{}
+      \resumeItemListStart
+        \resumeItem{Researched about and communicated with distinguished personalities about their work and helped them with the drafting of their TEDx speeches. Also contributed towards marketing and content writing.}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    
+%-----------EXTRA CURRICULARS-------------
+\section{Extra Curriculars}
+\smallskip
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Scuba Diving}{: Advanced Open Water(AOW) Certification by PADI.} \\
+     \textbf{Yoga}{: Practioner of yoga exercises, meditation and nutrition.} \\
+     \textbf{Dance}{: Comtemporary dancer for four years at a Studio, having performed in 8 organized dance shows.}
+    }}
+ \end{itemize}
+ 
+%-------------------------------------------
+\end{document}
