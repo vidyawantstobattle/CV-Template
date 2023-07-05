@@ -5,5 +5,5 @@ Original Template: https://www.overleaf.com/latex/templates/jakes-resume/syzfjbz
 
 Welcome to pull requests and any other discussions on making it more comprehensive.
 
-![Page 1](https://github.com/vidyawantstobattle/CV-Template/blob/main/Images/p1.jpg) <br />
-![Page 2](https://github.com/vidyawantstobattle/CV-Template/blob/main/Images/p2.jpg)
+![Page 1](https://github.com/vidyawantstobattle/CV-Template/blob/main/Images/Images/Master_s_CV__Main__page-0001.jpg) <br />
+![Page 2](https://github.com/vidyawantstobattle/CV-Template/blob/main/Images/Images/Master_s_CV__Main__page-0002.jpg)
